@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FADIL CRUEL</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+DK+Loopet:wght@100..400&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/feather-icons"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .copyright {
+      text-align: center;
+      color: white;
+      padding: 10px 0;
+      font-size: 14px;
+      background-color: rgba(0, 0, 0, 0.4);
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <div class="market-title">
+      FADIL CRUEL <i data-feather="shopping-cart"></i>
+    </div>
+  </div>
+
+  <div class="center-container">
+    <div class="rainbow-glow-border">
+      <img src="fadil-logo.jpg" alt="Profile" class="profile-img" />
+    </div>
+  </div>
+
+  <h1>CONTACT ME</h1>
+<div class="button-container">
+  <a href="https://wa.me/6285743371296" class="btn whatsapp">
+    <i class="fab fa-whatsapp"></i> WhatsApp
+  </a>
+  <a href="https://www.instagram.com/fadil_cruel31" class="btn instagram">
+    <i class="fab fa-instagram"></i> Instagram
+  </a>
+  <a href="https://tiktok.com/@fadil.bisnis" class="btn tiktok">
+    <i class="fab fa-tiktok"></i> Tik Tok
+  </a>
+  <a href="https://chat.whatsapp.com/CSDIJrvwvQKE5HYj4TN2BO" class="btn whatsapp-group">
+    <i class="fas fa-users"></i> Group<span>WA
+    
+    <a href="https://whatsapp.com/channel/0029Vae5NDC0LKZGL3NY511j" class="btn whatsapp-channel">
+    <i class="fab fa-whatsapp"></i>Saluran<span>WA
+  </a>
+
+  <h2 class="TESTIMONI-ZYY">FEE REKBER & TOP UP</h2>
+  <div class="slider">
+    <img src="qrisorkut.jpg" class="active" />
+    <img src="listfee.jpg" />
+    <img src="listtopup.jpg" />
+    <div class="slider-buttons">
+      <button onclick="prevSlide()">‹</button>
+      <button onclick="nextSlide()">›</button>
+    </div>
+  </div>
+
+  <!-- COPYRIGHT FOOTER -->
+  <footer class="copyright">
+  &copy; 2025 ikzyyxD.All rights
+    .
+  </footer>
+
+  <script>
+    feather.replace();
+
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slider img');
+
+    function showSlide(index) {
+      slides.forEach((img, i) => {
+        img.classList.toggle('active', i === index);
+      });
+    }
+
+    function nextSlide() {
+      currentSlide = (currentSlide + 1) % slides.length;
+      showSlide(currentSlide);
+    }
+
+    function prevSlide() {
+      currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+      showSlide(currentSlide);
+    }
+
+    showSlide(currentSlide);
+  </script>
+</body>
+</html>
